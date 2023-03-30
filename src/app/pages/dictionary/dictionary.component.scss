@@ -1,0 +1,40 @@
+.container {
+  height: 100wh;
+
+  display: flex;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1em;
+}
+
+:host ::ng-deep p-card {
+  width: 98vw;
+}
+
+:host ::ng-deep .p-card .p-card-body {
+  padding: 0.7em;
+}
+
+.list {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5em;
+}
+
+.word-box {
+  border: 1px solid #ededed;
+  padding: 1.5em;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px -1px rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+
+  background-color: var(--primary-100);
+  color: var(--primary-900);
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}

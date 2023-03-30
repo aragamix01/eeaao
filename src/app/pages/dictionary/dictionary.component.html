@@ -1,0 +1,18 @@
+<div class="container">
+  <p-card>
+    <h1>Coming Soon.</h1>
+  </p-card>
+  <p-card>
+    <ng-container *ngIf="word$ | async as word">
+      <div class="list">
+        <div *ngFor="let w of word.data">
+          <div class="word-box">
+            <div>{{ w.ko }}</div>
+            <div>{{ w.th }}</div>
+            <div>{{ w.en }}</div>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+  </p-card>
+</div>
